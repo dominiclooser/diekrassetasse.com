@@ -1,0 +1,103 @@
+#hero {
+  margin-top: calc(1 * var(--unit));
+  text-transform: uppercase;
+  font-weight: 900;
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1);
+}
+main {
+  margin-top: calc(1 * var(--unit));
+}
+main p:not(:first-child) {
+  margin-top: calc(0.5 * var(--unit));
+}
+@media (min-width: 600px) {
+  .container {
+    margin: 0 0 0 var(--unit);
+  }
+}
+.testimonial {
+  padding-right: calc(0.5 * var(--unit));
+  margin-bottom: calc(2 * var(--unit));
+  font-size: var(--m);
+  font-weight: normal;
+}
+.testimonial .text {
+  border-left: 2px solid dark;
+  padding-left: calc(0.5 * var(--unit));
+}
+.testimonial .author {
+  font-style: italic;
+}
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+#price-list {
+  list-style: none;
+}
+#price-list li {
+  margin-top: var(--unit);
+}
+#price-list li:before {
+  content: '//';
+  margin-right: calc(0.5 * var(--unit));
+}
+#index section {
+  margin-bottom: calc(2 * var(--unit));
+}
+#index h2 {
+  margin-bottom: var(--unit);
+}
+#index h2 span {
+  border-bottom: 3px solid dark;
+}
+img {
+  max-width: 100px;
+}
+@-moz-keyframes color {
+  0% {
+    color: #f00;
+  }
+  33% {
+    color: dark;
+  }
+  66% {
+    color: #00f;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    color: #f00;
+  }
+  33% {
+    color: dark;
+  }
+  66% {
+    color: #00f;
+  }
+}
+@-o-keyframes color {
+  0% {
+    color: #f00;
+  }
+  33% {
+    color: dark;
+  }
+  66% {
+    color: #00f;
+  }
+}
+@keyframes color {
+  0% {
+    color: #f00;
+  }
+  33% {
+    color: dark;
+  }
+  66% {
+    color: #00f;
+  }
+}

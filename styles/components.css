@@ -1,0 +1,128 @@
+.button {
+  border: border;
+  color: button-color;
+  border-radius: 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+}
+.button:hover {
+  background-color: button-color;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+@media two-columns {
+  .equal-columns {
+    display: flex;
+  }
+  .equal-columns .column {
+    flex: 1;
+  }
+}
+@media two-columns {
+  .third-columns {
+    display: flex;
+  }
+  .third-columns .column:first-child {
+    flex: 1;
+  }
+  .third-columns .column:nth-child(2) {
+    flex: 2;
+  }
+}
+@media text-plus {
+  .text-plus {
+    display: flex;
+  }
+}
+.text-plus-text {
+  margin: var(--unit) 0 0 0;
+}
+@media textplus {
+  .text-plus-text {
+    margin: 0 var(--unit) 0 0;
+  }
+}
+.text-plus-plus {
+  align-self: left;
+}
+@media text-plus {
+  .plus-text {
+    display: flex;
+  }
+}
+.plus-text-text {
+  margin: var(--unit) 0 0 0;
+}
+@media text-plus {
+  .plus-text-text {
+    margin: 0 0 0 var(--unit);
+  }
+}
+.plus-text-plus {
+  align-self: left;
+}
+.page-header {
+  background: page-header-background-color;
+  color: page-header-color;
+}
+.colored {
+  color: primaryColor;
+}
+.unmarked-links a {
+  text-decoration: none;
+}
+.arrow-list {
+  list-style: none;
+}
+.arrow-list li:before {
+  content: '\2192 \a0';
+}
+.stacked-list {
+  list-style: none;
+  padding: 0;
+}
+.stacked-list li {
+  padding: calc(0.5 * var(--unit)) 0;
+  padding-left: 10px;
+  border-bottom: 1px solid softBorderColor;
+}
+.stacked-list li:first-child {
+  border-top: 1px solid softBorderColor;
+}
+.separated-list {
+  list-style: none;
+  margin: 0;
+}
+.separated-list li {
+  display: inline;
+}
+.separated-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.definition-list dt {
+  display: inline;
+  font-weight: bold;
+}
+.definition-list dt::after {
+  content: ':';
+}
+.definition-list dd {
+  display: inline;
+  margin-left: var(--unit);
+  width: 100%;
+}
+.definition-list dd::after {
+  content: '\A';
+  white-space: pre;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: max-page-width;
+}
+.text-container {
+  max-width: text-width;
+}

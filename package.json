@@ -1,0 +1,27 @@
+{
+  "name": "krassetasse",
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "grunt": "latest",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "latest",
+    "grunt-exec": "^3.0.0",
+    "grunt-force": "^1.0.0",
+    "grunt-gh-pages": "latest",
+    "grunt-postcss": "latest",
+    "grunt-yaml": "latest",
+    "jit-grunt": "latest",
+    "matchdep": "latest",
+    "time-grunt": "latest"
+  },
+  "scripts": {
+    "deploy": "harp compile; grunt finish; grunt gh-pages",
+    "test": "url=tsnuk.me; psi $url"
+  },
+  "dependencies": {
+    "fittext.js": "^1.2.0"
+  }
+}
