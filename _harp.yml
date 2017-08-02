@@ -1,0 +1,28 @@
+globals:
+  testimonials:
+    - text: 'Seitdem ich meinen Kaffee aus der Krassen Tasse trinke, sind meine Pickel weg. Ich bin richtig glücklich mit diesem Produkt :):).'
+      author_name: 'Andrea'
+      author_age: '17'
+
+    - text: 'Die beste Tasse ever!!! Einfach top.'
+      author_name: 'Bernd'
+      author_age: '41'
+
+    - text: 'Die Tasse ist ja schon sehr krass, aber irgendwie, ja ich weiss auch nicht.'
+      author_name: 'Rüdiger'
+      author_age: '31'
+
+    - text: 'Krass!'
+      author_name: 'Alice'
+      author_age: '12'
+  
+  prices:
+    - Massage
+    - Ein Buch aus meiner Wunschliste
+    - Du schreibst eine überschwängliche Rezension, die auch noch lustig ist (minimale Pointendichte 3.46 P/B)
+    - Du drehst ein allerhöchst vorteilhaftes Video-Testimonial
+    - Du vermittels einen extremst interessanten Auftrag (Webdesign, Frontend, typographische Gestaltung, Lesung)
+    - Du machst äusserst tolle Beats, die du gerne mit meinen Texten verbinden würdest
+    - alle illegalen Tauschmöglichkeiten auf Anfrage
+    - du kaufst eine Sehr Krasse Tasse und kriegst die Krasse Tasse gratis dazu 
+    - Du möchtest deinen Gästen (Bar, Cafe, krasser Indie-Hipster-Ort) die krasseste Tasse der Welt bieten. Und möchtest sie mal bei den Gästen testen (nicht das das nötig wäre...)

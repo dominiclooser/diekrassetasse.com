@@ -1,0 +1,49 @@
+extends _base
+
+block content
+   #index.container
+         #hero
+            img(src='/images/chrysa.jpg')
+            h1
+               p Die
+               p Krasse
+               p Tasse
+           
+         section
+            p Liebe Konsumentin, lieber Konsument! 
+            p.
+               Entdecken Sie das neueste Produkt aus dem Hause <em> Die Krasse Tasse GmbH </em>:
+                die Krasse Tasse. Diese neuartige Tasse besticht vor allem und auch einzig durch
+               ihre Krassheit (Krassness...). Lesen Sie, was unsere bisherigen Kunden zu berichten haben:
+
+
+         section
+            h2 Testimonials
+            for testimonial in testimonials
+               blockquote.testimonial
+                  p.text= testimonial.text
+                  p.author= testimonial.author_name + ', ' + testimonial.author_age
+                           
+         section
+            h2 Konsum
+            p Das angebotene Produkt ist erhältlich im Tausch gegen:
+            ul#price-list
+               for price in prices
+                  li= price
+
+         //- p <em>Die Krasse Tasse</em>® ist aus Liebe entstanden. Aus viel Liebe.
+         //- p Das Produkt unterscheidet sich durch ihren aussergewöhnlichen Grad an Krassheit von anderen (un)vergleichbaren Waren.
+         //- p
+         //-    <strong> <em> Die Krasse Tasse </em> kann nicht käuflich erworben werden. </strong>
+
+         //- p Sie ist dadurch die krasseste unkaufbare Tasse der Welt. 
+         //- p Und zusätzlich die krasseste nicht kaufbare Tasse, unverkäufliche, kaufen-nix-e Tasse.
+         //- p. 
+         //-    Bestellen Sie noch heute eine <em>Krasse Tasse</em>! Wenn Sie in den nächsten 17.4678294 Sekunden anrufen, kriege sie noch eine zweite Tasse (die <em>Sehr Krasse Tasse</em>) kostenlos dazu!
+
+
+
+//- block scripts
+//-    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+//-    script(src='/node_modules/fittext.js/jquery.fittext.js')
+//-    script(src='scripts/fittext.js')

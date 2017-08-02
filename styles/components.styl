@@ -1,0 +1,110 @@
+.button
+    border: border
+    color: button-color
+    border-radius: 2em
+    cursor: pointer
+    text-transform: uppercase
+    padding: 0.5em 1em
+    &:hover
+        background-color: button-color
+        color: white
+
+.hidden
+    display: none
+
+.equal-columns 
+    @media two-columns
+        display: flex
+        .column
+            flex: 1
+        
+
+.third-columns
+    @media two-columns
+        display: flex
+        .column:first-child
+            flex: 1
+        .column:nth-child(2)
+            flex: 2
+            margin-left: calc(2*var(--unit))
+
+.text-plus
+    @media text-plus
+        display: flex
+
+.text-plus-text
+    margin: var(--unit) 0 0 0
+    @media textplus
+        margin: 0 var(--unit) 0 0
+
+.text-plus-plus
+    align-self: left
+
+.plus-text
+    @media text-plus
+        display: flex
+
+.plus-text-text
+    margin: var(--unit) 0 0 0
+    @media text-plus
+        margin: 0 0 0 var(--unit)
+
+.plus-text-plus
+    align-self: left
+
+.page-header
+    background: page-header-background-color
+    color: page-header-color
+
+.colored
+    color: primaryColor
+
+.unmarked-links
+    a
+        text-decoration: none
+
+.arrow-list
+    list-style: none
+    li:before
+        content: '\2192 \a0'
+
+.stacked-list
+    list-style: none
+    padding: 0
+    li  
+        padding: calc(0.5 * var(--unit)) 0 
+        padding-left: 10px
+        border-bottom: 1px solid soft-border-color
+    li:first-child
+        border-top: 1px solid soft-border-color
+
+.separated-list
+    list-style: none
+    margin: 0
+    li 
+        display: inline
+    li:not(:last-child)
+        margin-right: 10px
+
+.definition-list
+    dt
+        display: inline
+        font-weight: bold
+        &::after
+            content: ':'
+
+    dd
+        display: inline
+        margin-left:var(--unit) 
+        width: 100%
+        &::after
+            content: '\A'
+            white-space: pre
+
+.container
+    margin: 0 auto
+    padding: 0 20px
+    max-width: max-page-width
+
+.text-container
+    max-width: text-width

@@ -1,0 +1,47 @@
+:root
+    --xs: calc(var(--s) / var(--scale-factor))
+    --s: calc(var(--m) / var(--scale-factor))
+    --m: var(--font-size)
+    --l: calc(var(--scale-factor) * var(--m))
+    --xl: calc(var(--scale-factor) * var(--l))
+    --xxl: calc(var(--scale-factor) * var(--xl))
+    --xxxl: calc(var(--scale-factor) * var(--xxl))
+    --xxxxl: calc(var(--scale-factor) * var(--xxxl))
+    --xxxxxl: calc(var(--scale-factor) * var(--xxxxl))
+  
+body
+    color: text-color
+    font-size: var(--m)
+    font-family: body-font
+    line-height: var(--line-height)
+    text-rendering: geometricPrecision
+
+h1, h2, h3, h4
+    font-family: header-font
+
+h1
+    font-size: var(--xl)
+    font-weight: bold
+    line-height: 1
+    text-decoration: underline
+
+h2 
+    font-size: var(--l)
+    line-height: header-line-height
+    font-weight: 900
+    text-transform: uppercase
+    // text-decoration: underline
+
+h3
+    font-size: var(--m)
+    line-height: header-line-height
+
+p
+    hyphens: auto
+
+a
+    color: inherit
+    text-decoration: underline
+    &:hover
+        cursor: pointer
+        color: primaryColor
