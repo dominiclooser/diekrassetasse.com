@@ -58,5 +58,5 @@ module.exports = (grunt) ->
     jit grunt
     grunt.registerTask 'default', ['yaml', 'watch']
     grunt.registerTask 'compile', ['yaml','force:on', 'exec:harp','force:off', 'copy', 'stylus', 'postcss']
-    grunt.registerTask 'deploy', ['compile', 'gh-pages:production']
+    grunt.registerTask 'deploy', ['exec:harp', 'gh-pages:production']
     grunt.registerTask 'stage', ['compile', 'gh-pages:stage']
