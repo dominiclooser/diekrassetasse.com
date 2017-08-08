@@ -1,3 +1,6 @@
+.paragraph + .paragraph
+    margin-top: calc(0.5*var(--unit))
+
 .button
     border: border
     color: button-color
@@ -12,11 +15,10 @@
 .hidden
     display: none
 
-.equal-columns 
-    @media two-columns
-        display: flex
-        .column
-            flex: 1
+.two-columns 
+    display: flex
+    .column
+        flex-basis: 1
         
 
 .third-columns
@@ -68,15 +70,17 @@
     li:before
         content: '\2192 \a0'
 
-.stacked-list
+.lined-list
     list-style: none
     padding: 0
     li  
         padding: calc(0.5 * var(--unit)) 0 
-        padding-left: 10px
-        border-bottom: 1px solid soft-border-color
-    li:first-child
-        border-top: 1px solid soft-border-color
+        border-top: 1px solid dark
+        :last-child
+            border-bottom: 1px solid dark
+
+    // li:
+    //     border-top: 1px solid dark
 
 .separated-list
     list-style: none

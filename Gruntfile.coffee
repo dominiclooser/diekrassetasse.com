@@ -3,10 +3,18 @@ jit = require 'jit-grunt'
 autoprefixer = require 'autoprefixer'
 
 config =
+    exec: 
+        'harp': 'harp compile'
     'gh-pages':
-        options:
-            base: 'www'
-        src: '**/*'
+        production:
+            options:
+                base: 'www'
+            src: '**/*'
+        stage:
+            options:
+                base: 'www'
+                repo: 'git@github.com:dominiclooser/dominiclooser.ch-stage.git'
+            src: '**/*'
 
     postcss:
         options:
@@ -49,4 +57,6 @@ module.exports = (grunt) ->
     time grunt
     jit grunt
     grunt.registerTask 'default', ['yaml', 'watch']
-    grunt.registerTask 'finish', ['copy', 'stylus' , 'postcss']
+    grunt.registerTask 'compile', ['yaml','force:on', 'exec:harp','force:off', 'copy', 'stylus', 'postcss']
+    grunt.registerTask 'deploy', ['compile', 'gh-pages:production']
+    grunt.registerTask 'stage', ['compile', 'gh-pages:stage']
