@@ -1,0 +1,1 @@
+:root{--line-height:1.4;--scale-factor:1.5;--font-size:22px;--unit:calc(var(--line-height) * var(--font-size))}@media (min-width:40em){:root{--font-size:25px}}
