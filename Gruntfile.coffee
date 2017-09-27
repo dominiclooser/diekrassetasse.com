@@ -3,9 +3,7 @@ jit = require 'jit-grunt'
 autoprefixer = require 'autoprefixer'
 
 config =
-    exec: 
-        'harp': 'harp compile'
-   'gh-pages':
+    'gh-pages':
         production:
             options:
                 base: 'www'
@@ -15,30 +13,24 @@ config =
                 base: 'www'
                 repo: 'git@github.com:dominiclooser/stage.diekrassetasse.com.git'
             src: '**/*'
-    postcss:
-        options:
-            processors:
-                autoprefixer
-                    browers: 'last 2 versions'
-        dist:
-            src: 'www/styles/styles.css'
     copy:
         'production-cname':
-            src: 'cname/production'
+            src: '_cname/production'
             dest: 'www/CNAME'
         'stage-cname':
-            src: 'cname/stage'
+            src: '_cname/stage'
             dest: 'www/CNAME'
-        
-    stylus:
-        main:
-            src: 'styles/styles.styl'
-            dest: 'www/styles/styles.css'
     yaml:
         main:
             expand: true
             src: '_*.yml'
             ext: '.json'
+    exec: 
+        harp: 'harp compile'
+    stylus:
+        main:
+            src: 'styles/styles.styl'
+            dest: 'www/styles/styles.css'
     watch:
         options:
             livereload: true
@@ -50,9 +42,9 @@ config =
             tasks: []
 
 module.exports = (grunt) ->
-    grunt.initConfig config
-    time grunt
-    jit grunt
+    grunt.initConfig(config)
+    time(grunt)
+    jit(grunt)
     grunt.registerTask 'default', ['yaml', 'watch']
     grunt.registerTask 'compile', ['yaml', 'exec:harp']
     grunt.registerTask 'production', ['compile','copy:production-cname', 'gh-pages:production']
