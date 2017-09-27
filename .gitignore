@@ -10,3 +10,8 @@
 /staticfiles
 /.anvil
 /.temp
+.grunt
+_harp.json
+original-images
+www
+.vscode

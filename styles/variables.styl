@@ -1,20 +1,20 @@
 // breakpoints
 text-plus = '(min-width: 980px)'
 big-text = '(min-width: 40em)'
-two-columns = '(min-width: 800px)'
+two-columns = big-text
 start-left-align = '(min-width: 693px)'
 
 // typography
-body-font = 'Lora'//'Roboto Slab' //'Libre Baskerville' //Eczar //Inconsolata
+body-font = 'Cormorant'//'Roboto Slab' //'Libre Baskerville' //Eczar //Inconsolata
 header-font = 'Libre Franklin'
 header-line-height = 0.9
 text-width = 600px
 :root
     --line-height: 1.4
-    --scale-factor: 1.3
-    --font-size: 18px
+    --scale-factor: 1.5
+    --font-size: 22px
     @media big-text
-        --font-size: 20px
+        --font-size: 25px
     --unit: calc(var(--line-height) * var(--font-size))
 
 // colors
@@ -23,7 +23,7 @@ light-grey = #f7f7f7
 middle-grey = #e8e6e6
 primary-color =  #DB222A
 text-color = dark
-background-color = #fff
+background-color = #eaf9f9
 page-header-background-color = inherit
 page-header-text-color = inherit
 button-color = dark

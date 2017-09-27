@@ -10,12 +10,6 @@ config =
             options:
                 base: 'www'
             src: '**/*'
-        stage:
-            options:
-                base: 'www'
-                repo: 'git@github.com:dominiclooser/dominiclooser.ch-stage.git'
-            src: '**/*'
-
     postcss:
         options:
             processors:
@@ -23,10 +17,9 @@ config =
                     browers: 'last 2 versions'
         dist:
             src: 'www/styles/styles.css'
-
     copy:
         main:
-            src: []
+            src: ['CNAME']
             expand: true
             dest: 'www/'
         
@@ -45,9 +38,6 @@ config =
         yaml:
             files: ['**/*.yml']
             tasks: ['yaml']
-        stylus:
-            files:['**/*.styl']
-            tasks: ['stylus']
         all:
             files: ['**/*.*']
             tasks: []
@@ -57,6 +47,6 @@ module.exports = (grunt) ->
     time grunt
     jit grunt
     grunt.registerTask 'default', ['yaml', 'watch']
-    grunt.registerTask 'compile', ['yaml','force:on', 'exec:harp','force:off', 'copy', 'stylus', 'postcss']
-    grunt.registerTask 'deploy', ['exec:harp', 'gh-pages:production']
+    grunt.registerTask 'compile', ['yaml', 'exec:harp']
+    grunt.registerTask 'production', ['compile', 'gh-pages:production']
     grunt.registerTask 'stage', ['compile', 'gh-pages:stage']

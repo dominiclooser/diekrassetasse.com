@@ -16,9 +16,14 @@
     display: none
 
 .two-columns 
-    display: flex
-    .column
-        flex-basis: 1
+    @media two-columns
+        display: flex
+        .column
+            flex-basis: 50%
+        .column:first-child
+            margin-right: 10px
+        .column:nth-child(2)
+            margin-left: 10px
         
 
 .third-columns
@@ -108,7 +113,10 @@
 .container
     margin: 0 auto
     padding: 0 20px
-    max-width: max-page-width
+    max-width: 1000px
+    @media two-column
+        padding: 0
+   
 
 .text-container
     max-width: text-width
