@@ -1,8 +1,15 @@
 time = require 'time-grunt'
 jit = require 'jit-grunt'
 autoprefixer = require 'autoprefixer'
+cssVariables = require 'postcss-css-variables'
+calc = require 'postcss-calc'
 
 config =
+    postcss:
+        options:
+            processors: [autoprefixer({browers: 'last 2 versions'}), cssVariables, calc]
+        dist:
+            src: 'www/styles/styles.css'
     'gh-pages':
         production:
             options:
@@ -46,6 +53,6 @@ module.exports = (grunt) ->
     time(grunt)
     jit(grunt)
     grunt.registerTask 'default', ['yaml', 'watch']
-    grunt.registerTask 'compile', ['yaml', 'exec:harp']
+    grunt.registerTask 'compile', ['yaml', 'exec:harp', 'postcss']
     grunt.registerTask 'production', ['compile','copy:production-cname', 'gh-pages:production']
     grunt.registerTask 'stage', ['compile', 'copy:stage-cname', 'gh-pages:stage']
