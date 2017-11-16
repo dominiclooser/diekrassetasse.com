@@ -15,15 +15,16 @@ globals:
     - text: 'Krass!'
       author_name: 'Alice'
       author_age: '12'
-  
-  prices:
-    - Persönliche Übergabe durch den Produkt-Erfinder Dominic Looser in Zürich 
-    # - Massage
-    # - Ein Buch aus meiner Wunschliste
-    # - Du schreibst eine überschwängliche Rezension, die auch noch lustig ist (minimale Pointendichte 3.46 P/B)
-    # - Du drehst ein allerhöchst vorteilhaftes Video-Testimonial
-    # - Du vermittels einen extremst interessanten Auftrag (Webdesign, Frontend, typographische Gestaltung, Lesung)
-    # - Du machst äusserst tolle Beats, die du gerne mit meinen Texten verbinden würdest
-    # - alle illegalen Tauschmöglichkeiten auf Anfrage
-    # - du kaufst eine Sehr Krasse Tasse und kriegst die Krasse Tasse gratis dazu 
-    # - Du möchtest deinen Gästen (Bar, Cafe, krasser Indie-Hipster-Ort) die krasseste Tasse der Welt bieten. Und möchtest sie mal bei den Gästen testen (nicht das das nötig wäre...)
+  faq:
+    - question: Wieso wurde die Die Krasse Tasse GmbH gegründet?
+      answer: Wir haben bereits Sticker mit dem Aufdruck 'Die Krasse Tasse GmbH' gedruckt. 
+              Damit diese legal wurden, mussten wir die GmbH auch gründen. Ausserdem klingt
+              der Name sehr toll.
+    - question: Ist die Krasse Tasse GmbH Kunst oder Kommerz?
+      answer: Die Krasse Tasse GmbH weiss nicht, was Die Krasse Tasse GmbH ist. 
+    - question: Diese Antwort ist sehr unbefriedigend. Ich möchte Klarheit.
+      answer: Tut uns leid. Die Krasse Tasse bietet keine Klarheit, nur Lebensfreude.
+    - question: Wie krass ist die Krasse Tasse?
+      answer: Ziemlich krass. Unabhängige Krassheits-Messungen ergaben Werte zwischen 120ku und 130ku.
+    - question: Wie krasse ist die Sehr Krasse Tasse?
+      answer: 'Nomen est omen: sehr krass. 230ku-250ku. 
