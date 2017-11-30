@@ -17,14 +17,12 @@ globals:
       author_age: '12'
   faq:
     - question: Wieso wurde die Die Krasse Tasse GmbH gegründet?
-      answer: Wir haben bereits Sticker mit dem Aufdruck 'Die Krasse Tasse GmbH' gedruckt. 
-              Damit diese legal wurden, mussten wir die GmbH auch gründen. Ausserdem klingt
-              der Name sehr toll.
+      answer: Der Name klingt so toll.
     - question: Ist die Krasse Tasse GmbH Kunst oder Kommerz?
       answer: Die Krasse Tasse GmbH weiss nicht, was Die Krasse Tasse GmbH ist. 
     - question: Diese Antwort ist sehr unbefriedigend. Ich möchte Klarheit.
       answer: Tut uns leid. Die Krasse Tasse bietet keine Klarheit, nur Lebensfreude.
     - question: Wie krass ist die Krasse Tasse?
       answer: Ziemlich krass. Unabhängige Krassheits-Messungen ergaben Werte zwischen 120ku und 130ku.
-    - question: Wie krasse ist die Sehr Krasse Tasse?
-      answer: 'Nomen est omen: sehr krass. 230ku-250ku. 
+    - question: Wie krass ist die Sehr Krasse Tasse?
+      answer: 'Nomen est omen: sehr krass. 230ku-250ku.' 

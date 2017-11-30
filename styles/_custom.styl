@@ -35,10 +35,10 @@ h1
     font-size: 13vw
     text-transform: uppercase
     font-weight: 900
-    line-height: 0.8
+    line-height: 0.9
     color: red
     opacity: 0
-    @extends .blink
+    @extends .fast-blink
 
 #intro
     img
@@ -99,3 +99,10 @@ p + p
     color: blue
     opacity: 0
     @extends .fast-blink
+
+#faq
+    dd
+        margin-bottom: var(--unit)
+        margin-top: var(--semi-unit)
+        margin-left: 0
+        font-style: italic
