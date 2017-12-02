@@ -3,9 +3,10 @@ text-plus = '(min-width: 980px)'
 big-text = '(min-width: 40em)'
 two-columns = '(min-width: 800px)'
 start-left-align = '(min-width: 693px)'
+triple-grid = '(min-width: 800)'
 
 // typography
-body-font = 'Lora'//'Roboto Slab' //'Libre Baskerville' //Eczar //Inconsolata
+body-font = Inconsolata // 'Lora'//'Roboto Slab' //'Libre Baskerville' //Eczar //Inconsolata
 header-font = 'Libre Franklin'
 header-line-height = 0.9
 text-width = 600px
@@ -18,12 +19,13 @@ text-width = 600px
     --unit: calc(var(--line-height) * var(--font-size))
     --semi-unit: calc(0.5 * var(--unit))
     --double-unit: calc(2*var(--unit))
+    --triple-unit: calc(3*var(--unit))
 
 // colors
 dark = rgba(0,0,0,0.87)
 light-grey = #f7f7f7
 middle-grey = #e8e6e6
-primary-color =  #DB222A
+primary-color = red //  #DB222A
 dpink = #FF00AA
 text-color = dark
 background-color = #fff
@@ -34,5 +36,5 @@ soft-border-color = grey
 footer-background-color = inherit
 
 // misc
-border = 1px solid text-color
+default-border = 4px solid text-color
 max-page-width = 700px

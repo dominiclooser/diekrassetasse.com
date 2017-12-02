@@ -1,0 +1,21 @@
+extends _base
+
+block content
+   .container
+      h1 Firma
+      p Die Krasse Tasse GmbH ist der weltweit führende Anbieter krasser Tassen. 
+      p.
+         Unsere wertvollste Ressource sind natürlich unsere hochmotivierten MitarbeiterInnen.
+         Ausser unserem CEO, der rund um die Uhr arbeitet, geniesst die restliche Belegschaft
+         entspannte 52 Wochen Ferien. Deswegen ist das Arbeitsklima in der Firma jederzeit
+         hervorragend. 
+      h2 Unser Team
+      for person in team
+         .person
+            img(src='/images/team/' + person.image)
+            p
+               span.name= person.name
+               br
+               span.role= person.role
+
+      h2 Figures And Facts

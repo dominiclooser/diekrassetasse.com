@@ -1,0 +1,2 @@
+#!/usr/bin/env fish
+convert ../_raw-images/team/dominiclooser.svg -resize 400 ../images/team/dominiclooser.png

@@ -1,4 +1,34 @@
 globals:
+  
+  menu:
+    - name: Konsum
+      link: konsum
+    - name: Werbung
+      link: werbung
+    - name: GmbH
+      link: gmbh 
+
+  products:
+    - name: Krasse Tasse
+      image: krassetasse.png
+      price: 18
+      ku: 113
+    - name: Sehr Krasse Tasse
+      image: krassetasse.png
+      price: 18
+      ku: 241
+    - name: Vielseitig Desinteressiert
+      image: krassetasse.png
+      price: 18
+
+  team:
+    - name: Dominic Looser
+      role: Chief Executive Officier
+      image: dominiclooser.jpg
+    - name: Chrysa Chouliara
+      role: Chief Creativity Manager
+      image: chrysa.jpg
+
   testimonials:
     - text: 'Seitdem ich meinen Kaffee aus der Krassen Tasse trinke, sind meine Pickel weg. Ich bin richtig glücklich mit diesem Produkt :):).'
       author_name: 'Andrea'

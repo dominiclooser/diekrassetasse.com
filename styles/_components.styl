@@ -1,16 +1,28 @@
-.paragraph + .paragraph
-    margin-top: calc(0.5*var(--unit))
+.page-header
+    background: page-header-background-color
+    color: page-header-color
 
 .button
-    border: border
-    color: button-color
-    border-radius: 2em
+    font-family: body-font
+    // font-family: header-font
+    // font-weight: bold
+    // letter-spacing: 0.05em
+    color: dark
+    border: 1px solid dark
     cursor: pointer
     text-transform: uppercase
+    // font-style: italic
     padding: 0.5em 1em
     &:hover
         background-color: button-color
         color: white
+
+.primary-button
+    @extends .button
+    // color: primary-color
+    // border: 3px solid primary-color
+    font-size: var(--l)
+    
 
 .hidden
     display: none
@@ -59,10 +71,6 @@
 .plus-text-plus
     align-self: left
 
-.page-header
-    background: page-header-background-color
-    color: page-header-color
-
 .colored
     color: primaryColor
 
@@ -79,13 +87,10 @@
     list-style: none
     padding: 0
     li  
-        padding: calc(0.5 * var(--unit)) 0 
+        padding: var(--semi-unit) 0 
         border-top: 1px solid dark
         :last-child
             border-bottom: 1px solid dark
-
-    // li:
-    //     border-top: 1px solid dark
 
 .separated-list
     list-style: none
@@ -101,7 +106,6 @@
         font-weight: bold
         &::after
             content: ':'
-
     dd
         display: inline
         margin-left:var(--unit) 
@@ -117,6 +121,17 @@
     @media two-column
         padding: 0
    
-
 .text-container
     max-width: text-width
+
+.video-wrapper 
+    position: relative
+    padding-bottom: 56.25% /* 16:9 */
+    padding-top: 25px
+    height: 0
+    iframe 
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
