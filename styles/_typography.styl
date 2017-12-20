@@ -22,7 +22,7 @@ h1, h2, h3, h4
 
 h1
     font-size: var(--xl)
-    font-weight: bold
+    font-weight: 900
     line-height: 1
 
 h2 
@@ -30,7 +30,12 @@ h2
     line-height: header-line-height
     font-weight: 900
     text-transform: uppercase
-    margin: var(--double-unit) 0 var(--unit) 0
+    margin: var(--two-units) 0 var(--two-units) 0
+    color: primary-color
+    border-top: small-border-width solid primary-color
+    border-bottom: @border-top
+    padding: var(--semi-unit)
+    text-align: center
     
 h3
     font-size: var(--m)

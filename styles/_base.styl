@@ -16,19 +16,63 @@ canvas, img
     vertical-align: middle
 
 body
-    padding-bottom: var(--double-unit)
+    min-height: 100vh
+    padding: var(--two-units) 0
+    background-image: url('/images/background.jpg')
+    background-size: cover
+    // background-position-x: -100px
+    // @media desktop
+    //     background-position-x: 0
+    //     background-position-y: -200px
+        
+#site-title
+    font-family: header-font
+    display: block
+    text-decoration: none
+    font-weight: 900
+    text-transform: uppercase
+    font-size: var(--m)
+    padding: var(--unit) 0
+    line-height: header-line-height
+    text-align: center
 
-.page-header
-    padding: var(--double-unit) 0
-    border-bottom: default-border
-    h1
+#page-title
+    text-transform: uppercase
+    border-top: border-width solid primary-color
+    border-bottom: @border-top
+    padding: var(--unit) 0
+    color: primary-color
+    font-size: var(--xl)
+    text-align: center
+
+#intro
+    margin-top: var(--two-units)
+    ul
+        margin-top: var(--semi-unit)
+        li
+            margin-top: var(--semi-unit)
+
+.testimonial
+    padding-right: var(--semi-unit)
+    margin-bottom: var(--unit)
+    color: white
+    .text
+        border-left: 4px solid white
+        padding-left: var(--semi-unit)
+        font-family: header-font
+        font-weight: 900
+        font-size: var(--m)
+        line-height: header-line-height
         text-transform: uppercase
-        color: primary-color
-        font-size: var(--xxxxl)
-        line-height: 0.9
+        letter-spacing: 0.03em
+        font-style: italic
+    .author
+        margin-top: var(--semi-unit)
+        
+blockquote
+    padding: 0
+    margin: 0
+
+// .small-container
+//     background-color: rgba(256, 256, 256, 0.3)
     
-    // h1 
-    //     font-family: body-font
-    //     font-weight: normal
-    //     text-transform: none
-    //     font-size: var(--l)

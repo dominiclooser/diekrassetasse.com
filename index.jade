@@ -1,24 +1,27 @@
 extends _base
 
-block content
-   .container
-      nav#home-menu
-         ul
-            for item in menu
-               li
-                     a(href='#{item.link}')= item.name
+block body
+   #home.small-container
+      //- header
+      //-    h1.
+      //-       Die <br> Krasse <br> Tasse <br>
+      - testimonial = testimonials.short[1]
+      blockquote.testimonial
+         p.text= testimonial.text
+         p.author= testimonial.author_name + ', ' + testimonial.author_age 
+      
+      //- p#intro.
+      //-    Die Krasse Tasse: das revolutionärste
+      //-    Produkt seit Erfindung des Rades.
+      
+      #buttons
+         button.big-button Video schauen
+         button#buy-button.big-button jetzt kaufen
 
-
-      //- #products
-      //-    for product in products
-      //-       .product
-      //-          img(src='images/products/' + product.image)
-      //-          h2.name= product.name
-      //-          p.price= product.price + ' SFr.'
-      //-          p= product.ku + ' ku'
-
-
-   //- .container
-   //-    .video-wrapper
-   //-       iframe(src='https://player.vimeo.com/video/245454737?title=0&byline=0&portrait=0', frameborder="0", webkitallowfullscreen, allowfullscreen)
-   //-    button#buy-button.primary-button kaufen
+      //- .video-wrapper
+      //-    iframe(src='https://player.vimeo.com/video/245454737?title=0&byline=0&portrait=0', frameborder="0", webkitallowfullscreen, allowfullscreen)
+      //- 
+      //- nav
+      //-    for item in menu
+      //-       a(href='#{item.link}')= item.name
+ 

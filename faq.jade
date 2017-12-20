@@ -1,0 +1,8 @@
+extends _default
+
+block content
+   .small-container
+      dl#faq
+         for item in faq
+            dt= item.question
+            dd= item.answer

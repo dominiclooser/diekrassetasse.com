@@ -3,19 +3,22 @@
     color: page-header-color
 
 .button
-    font-family: body-font
-    // font-family: header-font
-    // font-weight: bold
-    // letter-spacing: 0.05em
+    font-family: header-font
+    font-weight: 700
+    letter-spacing: 0.05em
     color: dark
-    border: 1px solid dark
+    border: none
     cursor: pointer
     text-transform: uppercase
-    // font-style: italic
     padding: 0.5em 1em
     &:hover
         background-color: button-color
         color: white
+
+.big-button
+    @extends .button
+    width: 300px
+    font-size: var(--m)
 
 .primary-button
     @extends .button
@@ -116,10 +119,16 @@
 
 .container
     margin: 0 auto
-    padding: 0 20px
+    padding: 0 var(--unit)
     max-width: max-page-width
     @media two-column
         padding: 0
+
+.small-container
+    margin: 0 auto
+    padding: 0 var(--unit)
+    max-width: small-page-width
+    
    
 .text-container
     max-width: text-width
@@ -135,3 +144,27 @@
         left: 0
         width: 100%
         height: 100%
+
+@keyframes fontalicious
+  0%
+    font-family: helvetica
+  10%
+    font-family: times
+  20% 
+    font-family: fantasy
+  30%
+    font-family: monospace
+  40% 
+    font-family: Palatino
+  50%
+    font-family: Tahoma
+  60%
+    font-family: impact
+  70%
+    font-family: cursive
+  80% 
+    font-family: monospace
+  90% 
+    font-family: fantasy
+  99%
+    font-family: futura
