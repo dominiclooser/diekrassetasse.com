@@ -1,0 +1,16 @@
+extends _base
+
+block body
+   #home.small-container
+      header
+         h1.
+            Die <br> Krasse <br> Tasse <br>
+      a(href='border')#buy-button.big-button jetzt kaufen!
+      dl#faq
+         for item in faq
+            dt= item.question
+            dd= item.answer
+
+//- block scripts
+//-    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
+//-    script(src='scripts/custom.js') 

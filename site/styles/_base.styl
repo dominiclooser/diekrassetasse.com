@@ -1,0 +1,78 @@
+html 
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+html
+    background-color: background-color
+    height: 100%
+
+img, video, iframe
+    max-width: 100%
+    max-height: 100%
+
+canvas, img
+    vertical-align: middle
+
+body
+    // min-height: 100vh
+    // padding: var(--two-units) 0
+    // background-image: url('/images/background.jpg')
+    // background-size: cover
+    // background-position-x: -100px
+    // @media desktop
+    //     background-position-x: 0
+    //     background-position-y: -200px
+        
+#site-title
+    font-family: header-font
+    display: block
+    text-decoration: none
+    font-weight: 900
+    text-transform: uppercase
+    font-size: var(--m)
+    padding: var(--unit) 0
+    line-height: header-line-height
+    text-align: center
+
+#page-title
+    text-transform: uppercase
+    border-top: border-width solid primary-color
+    border-bottom: @border-top
+    padding: var(--unit) 0
+    color: primary-color
+    font-size: var(--xl)
+    text-align: center
+
+#intro
+    margin-top: var(--two-units)
+    ul
+        margin-top: var(--semi-unit)
+        li
+            margin-top: var(--semi-unit)
+
+.testimonial
+    padding-right: var(--semi-unit)
+    margin-bottom: var(--unit)
+    color: white
+    .text
+        border-left: 4px solid white
+        padding-left: var(--semi-unit)
+        font-family: header-font
+        font-weight: 900
+        font-size: var(--m)
+        line-height: header-line-height
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        font-style: italic
+    .author
+        margin-top: var(--semi-unit)
+        
+blockquote
+    padding: 0
+    margin: 0
+
+// .small-container
+//     background-color: rgba(256, 256, 256, 0.3)
+    
