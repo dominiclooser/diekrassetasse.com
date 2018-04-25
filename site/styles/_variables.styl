@@ -3,24 +3,24 @@ text-plus = '(min-width: 980px)'
 big-text = '(min-width: 40em)'
 two-columns = '(min-width: 800px)'
 start-left-align = '(min-width: 693px)'
-triple-grid = '(min-width: 800)'
+three-columns = '(min-width: 1000px)'
 desktop = '(min-width: 500px)'
 
 // typography
-body-font = Inconsolata  //'Roboto Slab' //'Libre Baskerville' //Eczar //Inconsolata
-header-font = 'Libre Franklin'
-header-line-height = 1
+body-font = 'Amplitude Reg' 
+heading-font = 'Amplitude Bd'
+heading-line-height = 1
 text-width = 600px
 :root
     --line-height: 1.3
     --scale-factor: 1.5
-    --font-size: 20px
+    --font-size: 18px
     @media big-text
         --font-size: 24px
     --unit: calc(var(--line-height) * var(--font-size))
     --semi-unit: calc(0.5 * var(--unit))
     --two-units: calc(2*var(--unit))
-    --triple-unit: calc(3*var(--unit))
+    --three-units: calc(3*var(--unit))
     --four-units: calc(4*var(--unit))
     --six-units: calc(6*var(--unit))
     --default-padding: var(--unit)
@@ -29,21 +29,22 @@ text-width = 600px
 dark = rgba(0,0,0,0.87)
 light-grey = #f7f7f7
 middle-grey = #e8e6e6
-primary-color = red
-secondary-color =#070EAC
 dpink = #FF00AA
+dblue = #B9CBD3
+dred = #CE0607
+dyellow = #F6E518
 
-text-color = dark
-background-color = white
-page-header-background-color = inherit 
-page-header-color = inherit
+text-color = dred
+heading-color = dred
+background-color = dyellow 
 button-color = dark
 soft-border-color = grey
 footer-background-color = inherit
+link-hover-color = blue
 
 // misc
 border-width = 6px
 small-border-width = 3px
 default-border = border-width solid text-color
-max-page-width = 700px
-small-page-width = 500px
+small-page-width = 450px
+large-page-width = 1200px

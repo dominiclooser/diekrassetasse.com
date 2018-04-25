@@ -1,0 +1,26 @@
+@keyframes blink 
+    50%
+        opacity: 1
+
+@keyframes switch-background
+    50%
+        background-color: dblue
+
+.blink
+    opacity: 0
+    animation-name: blink
+    animation-duration: 2s
+    animation-iteration-count: infinite
+    animation-timing-function: steps(1)
+
+.fast-blink
+    animation-name: blink
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    animation-timing-function: steps(1)
+
+.slow-blink
+    animation-name: blink
+    animation-duration: 3s
+    animation-iteration-count: infinite
+    // animation-timing-function: steps(1)

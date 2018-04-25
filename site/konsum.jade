@@ -1,24 +1,35 @@
 extends _default
 
 block content
-   .small-container
-      #intro
-         p.
-            Alle hochwertigen Produkte der Die Krasse Tasse GmbH können zurzeit über
-            folgende Vertriebswege erworben werden:
-         ul
-            li. 
-               Persönliche und kostenlose Übergabe durch den CEO in Zürich &rarr; <a href='mailto:#{email}'>Termin vereinbaren</a>
-            li.
-               Bei <a href='http://friedmannschmuck.ch'>Friedmann Schmuck</a> in der
-                Zürcher Altstadt. Bitte beachten Sie die Öffnungszeiten.
-            li.
-               Auf <a href='mailto:#{email}'>Anfrage</a> per Post und Packet.
-      h2 Produkte
-      #products
-         for product in products
-            .product
-               img(src='images/products/'+product.image)
-               .description
-                  h3.name= product.name
-                  p.price= product.price + ' SFr.'
+   .wrapper
+      section
+         #products
+            for product in products
+               .product
+                  picture.product-picture
+                     img(src='images/products/' + product.image)
+                  .product-info
+                     header
+                        h3.product-name= product.name
+                     div= product.description
+                     footer
+                        .product-price= product.price + ' SFr.'
+                        button.buy-button Kaufen!
+      section
+         p Greifen Sie jetzt zu!!! Es sind nur noch
+         p#number 5
+         p Krasse Tassen übrig.
+         button zugreifen!!!
+
+      //- #intro.arrow-links
+      //-    p.
+      //-       Konsumieren Sie bitte folgendermassen:
+      //-    ul
+      //-       li. 
+      //-          Persönliche Übergabe durch den CEO in Zürich (kostenlos) <a href='mailto:#{email}'>Termin vereinbaren</a>
+      //-       li.
+      //-          Bei <a href='http://friedmannschmuck.ch'>Friedmann Schmuck</a> in der
+      //-             Zürcher Altstadt. Bitte beachten Sie die Öffnungszeiten.
+      //-       li.
+      //-          Auf <a href='mailto:#{email}'>Anfrage</a> per Post und Packet.
+  

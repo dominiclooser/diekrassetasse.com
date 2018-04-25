@@ -1,16 +1,35 @@
 extends _base
 
-block body
-   #home.small-container
-      header
-         h1.
-            Die <br> Krasse <br> Tasse <br>
-      a(href='border')#buy-button.big-button jetzt kaufen!
-      dl#faq
-         for item in faq
-            dt= item.question
-            dd= item.answer
+mixin star(section)
+   a(href=section).star
+      svg(viewBox='0 0 262 259')
+         polygon(points='124.258578 198.743295 81.1040268 245.541978 78.0292834 181.862183 14.9874184 189.88213 53.4311895 139.117707 2.46469511e-14 104.606296 61.9740178 90.5104824 43.1545513 29.6159863 99.6604841 58.7843697 124.258578 0 148.856672 58.7843697 205.362605 29.6159863 186.543138 90.5104824 248.517156 104.606296 195.085967 139.117707 233.529738 189.88213 170.487873 181.862183 167.413129 245.541978')
+         text
+            tspan(x=120, y=129)= section + '!!!'
 
-//- block scripts
-//-    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
-//-    script(src='scripts/custom.js') 
+block body
+   #home.wrapper
+      header
+         h1 Die Krasse Tasse GmbH
+         .subtitles
+            p kommerziell
+            p anti-kapitalistisch
+            p gewinn-orientiert
+      .stars
+         +star('konsum')
+         +star('werbung')
+         +star('faq') 
+
+
+
+
+         //- svg(viewBox='0 0 262 259')
+         //-    polygon(stroke="#D0021B", stroke-width="5", fill="#F8E71C", points="124.258578 198.743295 81.1040268 245.541978 78.0292834 181.862183 14.9874184 189.88213 53.4311895 139.117707 2.46469511e-14 104.606296 61.9740178 90.5104824 43.1545513 29.6159863 99.6604841 58.7843697 124.258578 0 148.856672 58.7843697 205.362605 29.6159863 186.543138 90.5104824 248.517156 104.606296 195.085967 139.117707 233.529738 189.88213 170.487873 181.862183 167.413129 245.541978")
+         //-    text(font-family="Amplitude-Bold", font-size="24", font-weight="bold", fill="#CE0607")
+         //-       tspan(x="58", y="129") WERBUNG!!!
+         //- svg.star(viewBox='0 0 262 259')
+         //-    polygon(stroke="#D0021B", stroke-width="5", fill="#F8E71C", points="124.258578 198.743295 81.1040268 245.541978 78.0292834 181.862183 14.9874184 189.88213 53.4311895 139.117707 2.46469511e-14 104.606296 61.9740178 90.5104824 43.1545513 29.6159863 99.6604841 58.7843697 124.258578 0 148.856672 58.7843697 205.362605 29.6159863 186.543138 90.5104824 248.517156 104.606296 195.085967 139.117707 233.529738 189.88213 170.487873 181.862183 167.413129 245.541978")
+         //-    text(font-family="Amplitude-Bold", font-size="24", font-weight="bold", fill="#CE0607")
+         //-       tspan(x="58", y="129") FAQ!!!
+         
+ 

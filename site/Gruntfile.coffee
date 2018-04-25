@@ -22,10 +22,10 @@ config =
             src: '**/*'
     copy:
         'production-cname':
-            src: '_cname/production'
+            src: '_cnames/production'
             dest: 'www/CNAME'
         'stage-cname':
-            src: '_cname/stage'
+            src: '_cnames/stage'
             dest: 'www/CNAME'
     yaml:
         main:

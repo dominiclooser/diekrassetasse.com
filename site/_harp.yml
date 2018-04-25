@@ -20,21 +20,23 @@ globals:
   products:
     - name: Krasse Tasse
       image: krassetasse.png
-      price: 17.85
+      price: 18.05
       ku: 113
+      description: 'Das Original!!! Der ultimative Hipster-Shizzle. THE product. 
+         Macht unendlich glücklich, leicht und pickelfrei.'
     - name: Sehr Krasse Tasse
       image: krassetasse.png
-      price: 18.15
+      price: '18.10'
       ku: 241
-    - name: Premium-Deluxe-Super-Kombi
+    - name: Premium-Deluxe-Super-Kombi-Packet
       image: krassetasse.png
-      price: 33.30
+      price: '33.30'
     - name: Vielseitig Desinteressiert
       image: krassetasse.png
-      price: 18
+      price: '18.15'
     - name: Geometry For Rebels
       image: krassetasse.png
-      price: 18
+      price: '18.20'
 
   team:
     - name: Dominic Looser

@@ -1,15 +1,27 @@
-.page-header
-    background: page-header-background-color
-    color: page-header-color
+.color-switching-link
+    color: inherit
+    &:hover
+        color: link-hover-color
+
+.color-switching-links
+    a
+        @extends .color-switching-link
+
+.arrow-links    
+    a
+        color: inherit
+        &::before
+            content: '→'
+            margin-right: 0.3em
+        &:hover
+            cursor: pointer
+            text-decoration: underline
 
 .button
-    font-family: header-font
-    font-weight: 700
     letter-spacing: 0.05em
     color: dark
     border: none
     cursor: pointer
-    text-transform: uppercase
     padding: 0.5em 1em
     &:hover
         background-color: button-color
@@ -117,20 +129,19 @@
             content: '\A'
             white-space: pre
 
-.container
+.wrapper
     margin: 0 auto
     padding: 0 var(--unit)
-    max-width: max-page-width
-    @media two-column
-        padding: 0
+    @media three-columns
+        max-width: large-page-width
 
-.small-container
+.small-wrapper
     margin: 0 auto
     padding: 0 var(--default-padding)
     max-width: small-page-width
     
    
-.text-container
+.text-wrapper
     max-width: text-width
 
 .video-wrapper 

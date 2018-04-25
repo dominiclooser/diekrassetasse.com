@@ -1,8 +1,8 @@
 extends _base
 
 block body
-   .small-container
-      header.page-header
-         a(id='site-title', href='/') Die Krasse Tasse
-         h1#page-title= current.source
+   .wrapper
+      header.site-header
+         a(href='/').color-switching-link Die Krasse Tasse GmbH
+      h1.page-title= pagetitle
    block content
