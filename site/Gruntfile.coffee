@@ -30,7 +30,7 @@ config =
     yaml:
         main:
             expand: true
-            src: '_*.yml'
+            src: '**/*.yml'
             ext: '.json'
     exec: 
         harp: 'harp compile'

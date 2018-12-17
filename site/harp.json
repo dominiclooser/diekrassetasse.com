@@ -1,0 +1,156 @@
+{
+  "globals": {
+    "email": "dominic.looser@gmail.com",
+    "menu": [
+      {
+        "name": "Konsum",
+        "link": "konsum"
+      },
+      {
+        "name": "Werbung",
+        "link": "werbung"
+      },
+      {
+        "name": "GmbH",
+        "link": "gmbh"
+      },
+      {
+        "name": "FAQ",
+        "link": "faq"
+      }
+    ],
+    "ads": [
+      "krss-tss.png",
+      "logo.png",
+      "muede.png"
+    ],
+    "products": [
+      {
+        "name": "Krasse Tasse",
+        "image": "krassetasse.png",
+        "price": 18.05,
+        "ku": 113,
+        "description": "Das Original!!! Der ultimative Hipster-Shizzle. THE product.  Macht unendlich glücklich, leicht und pickelfrei."
+      },
+      {
+        "name": "Sehr Krasse Tasse",
+        "image": "krassetasse.png",
+        "price": "18.10",
+        "ku": 241
+      },
+      {
+        "name": "Premium-Deluxe-Super-Kombi-Packet",
+        "image": "krassetasse.png",
+        "price": "33.30"
+      },
+      {
+        "name": "Vielseitig Desinteressiert",
+        "image": "krassetasse.png",
+        "price": "18.15"
+      },
+      {
+        "name": "Geometry For Rebels",
+        "image": "krassetasse.png",
+        "price": "18.20"
+      }
+    ],
+    "team": [
+      {
+        "name": "Dominic Looser",
+        "role": "Chief Executive Officier",
+        "image": "dominiclooser.jpg"
+      },
+      {
+        "name": "Chrysa Chouliara",
+        "role": "Chief Creativity Manager",
+        "image": "chrysa.jpg"
+      }
+    ],
+    "testimonials": {
+      "short": [
+        {
+          "text": "Krass!",
+          "author_name": "Alice",
+          "author_age": "12"
+        },
+        {
+          "text": "Die beste Tasse ever!!!",
+          "author_name": "Bernd",
+          "author_age": "37"
+        },
+        {
+          "text": "Love Love Love",
+          "author_name": "Andrea",
+          "author_age": "32"
+        }
+      ],
+      "long": [
+        {
+          "text": "Seitdem ich meinen Kaffee aus der Krassen Tasse trinke, sind meine Pickel weg. Ich bin richtig glücklich mit diesem Produkt :):).",
+          "author_name": "Andrea",
+          "author_age": "17"
+        },
+        {
+          "text": "Die beste Tasse ever!!! Einfach top.",
+          "author_name": "Bernd",
+          "author_age": "41"
+        },
+        {
+          "text": "Die Tasse ist ja schon sehr krass, aber irgendwie, ja ich weiss auch nicht.",
+          "author_name": "Rüdiger",
+          "author_age": "31"
+        }
+      ]
+    },
+    "faq": [
+      {
+        "question": "Wieso kostet die Sehr Krasse Tasse mehr als die Krasse Tasse?",
+        "answer": "Also das ist jetzt wirklich eine total bescheuerte Frage."
+      },
+      {
+        "question": "Mir wurde aber beigebracht, dass es keine dummen Fragen gibt. Stimmt das etwa nicht?",
+        "answer": "Nein, das stimmt nicht. Es gibt durchaus dumme Fragen, was sich übrigens soeben bestätigt hat."
+      },
+      {
+        "question": "Meinen Sie nicht, Sie würden mehr Tassen verkaufen, wenn Sie Ihre Kunden nicht beschimpfen würden?",
+        "answer": "Hmmmm, guter Punkt."
+      },
+      {
+        "question": "Gibts die Die Krasse Tasse GmbH wirklich?",
+        "answer": "Noch nicht, aber bald. Krasse und Sehr Krasse Tassen gibt es aber schon."
+      },
+      {
+        "question": "Wieso gründen Sie eine GmbH, wenn Sie nur etwa 20 Tassen pro Jahr verkaufen?",
+        "answer": "Der Name klingt so toll."
+      },
+      {
+        "question": "Ist die Krasse Tasse Kunst oder Kommerz?",
+        "answer": "Keine Ahnung."
+      },
+      {
+        "question": "Ich möchte aber Klarheit!",
+        "answer": "Tut uns leid. Die Krasse Tasse bietet keine Klarheit, nur Lebensfreude. Ausserdem war das keine Frage."
+      },
+      {
+        "question": "Wie krass ist die Krasse Tasse?",
+        "answer": "Ziemlich krass. Unabhängige Krassheits-Messungen ergaben Werte zwischen 120ku und 130ku."
+      },
+      {
+        "question": "Was ist ein ku?",
+        "answer": "Ku steht für Krassness Unit, eine international standardisierte Masseinheit für Krassheit."
+      },
+      {
+        "question": "Wie krass ist die Sehr Krasse Tasse?",
+        "answer": "Nomen est omen: sehr krass. 230ku-250ku."
+      },
+      {
+        "question": "Schreibt man krass nicht klein wie alle Adjektive?",
+        "answer": "Krasse Wörter schreiben wir gross."
+      },
+      {
+        "question": "Wieviele Einwohner hat Polen?",
+        "answer": "38.562.000 (2015)"
+      }
+    ]
+  }
+}

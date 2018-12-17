@@ -19,8 +19,6 @@ blockquote
     padding: 0
     margin: 0
 
-
-
 .site-header
     font-family: heading-font
     display: block
@@ -37,29 +35,6 @@ blockquote
     font-size: var(--xl)
     &::first-letter
         text-transform: uppercase
-
-///
-/// home
-///
-
-#home
-    header 
-        margin-top: var(--two-units)
-        text-transform: uppercase
-        h1
-            font-size: var(--l)
-    .subtitles
-        margin-top: var(--semi-unit)
-        font-family: heading-font
-        color: heading-color
-        font-style: italic
-        @media three-columns
-            p
-                display: inline
-                &:after
-                    content: ','
-                    margin-right: 10px
-
 
 .stars
     margin-top: var(--three-units)
@@ -95,29 +70,41 @@ blockquote
 
 
 
-///
-/// konsum
-///
+// home
 
-img
-    width: 100%
-
-#number
-    font-family: heading-font
-    font-weight: 900
-    font-size: 200px
-    text-align: center
-    color: dpink
-    opacity: 0
-    @extends .slow-blink
-
-#intro
-    ul
-        list-style: none
-    li
-        padding: var(--unit) 0
-        border-top: 2px solid primary-color
-
+#home
+    .page-header 
+        margin-top: var(--two-units)
+        margin-bottom: var(--two-units)
+        text-transform: uppercase
+        h1
+            font-size: var(--l)
+    .subtitles
+        margin-top: var(--semi-unit)
+        font-family: heading-font
+        color: heading-color
+        font-style: italic
+        @media three-columns
+            p
+                display: inline
+                &:after
+                    content: ','
+                    margin-right: 10px
+    .video-wrapper
+        margin-bottom: var(--unit)
+    #counter
+        font-family: heading-font
+        font-size: var(--l)
+        margin-bottom: var(--unit)
+    #number
+        margin: 0 var(--semi-unit)
+        font-family: heading-font
+        font-weight: 900
+        font-size: var(--xl)
+        // text-align: center
+        color: dpink
+        opacity: 0
+        @extends .blink
 #products
     display: flex
     flex-wrap: wrap
@@ -128,29 +115,19 @@ img
     margin-bottom: var(--unit)
     padding: 0 var(--unit)
     background: dpink
-    // max-width: 50%
-    // min-width: 40%
-    // flex: 1
-    
-    // &:nth-child(2n+1)
-    //     // background-color: red
-    //     margin-right: var(--semi-unit)
-    // &:nth-child(2n+2)
-    //     // background-color: blue
-    //     margin-left: var(--semi-unit)
-    
+    width: 100%
     @media three-columns
         max-width: 30%
         &:not(:nth-child(3n+3))
             margin-right: var(--unit)
-    .product-picture
-        padding: var(--unit) 0
+    picture
+        padding: var(--two-units) 0
         display: flex
         justify-content: center
         img
             align-self: center
             max-width: 50vw
-    .product-info
+    .info
         background: background-color
         border-bottom: var(--unit) solid dpink
         color: text-color
@@ -165,19 +142,35 @@ img
             display: flex
             justify-content: space-between
             align-items: flex-end
-            margin-top: calc(var(--unit))
-    .product-name
-        font-family: heading-font
-        font-size: var(--l)
-        padding-right: var(--unit)
-        line-height: heading-line-height
-    .buy-button
-        @extends .button
-        color: dyellow
-        // border: 3px solid blue
-        font-family: body-font
-        background: dred 
-        font-size: var(--m)
+            margin-top: var(--unit)
+        .name
+            font-family: heading-font
+            font-size: var(--l)
+            padding-right: var(--unit)
+            line-height: heading-line-height
+        .buy-button
+            @extends .button
+            color: dyellow
+            // border: 3px solid blue
+            font-family: body-font
+            background: dred 
+            font-size: var(--m)
+
+///
+/// konsum
+///
+
+img
+    width: 100%
+
+#intro
+    ul
+        list-style: none
+    li
+        padding: var(--unit) 0
+        border-top: 2px solid primary-color
+
+
     // .product-price
     //     width: 9em
 ///
@@ -185,8 +178,7 @@ img
 /// 
 
 #werbung
-    .video-wrapper
-        margin-top: var(--two-units)
+    
     img
         margin-top: var(--unit)
 
